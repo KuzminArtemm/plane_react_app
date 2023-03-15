@@ -1,6 +1,12 @@
+import { useContext } from 'react';
+
+import { TodoListContext } from '../../Context';
 import Todoitem from '../Todoitem';
 
-const Todolist = ({ completedTodo, deleteTodo, todos }) => {
+const Todolist = () => {
+  console.log('render TodoList');
+  const { todos, deleteTodo, completedTodo } = useContext(TodoListContext);
+
   return (
     <ul className="list-group">
       {todos.length ? (
