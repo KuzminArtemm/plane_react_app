@@ -5,7 +5,6 @@ import useTodos from '../hooks/useTodos';
 const TodoListContext = createContext();
 
 const TodoListProvider = ({ children }) => {
-  console.log('render TodoListProvider');
   const {
     todos,
     deleteTodo,

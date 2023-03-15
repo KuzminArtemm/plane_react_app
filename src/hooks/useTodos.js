@@ -6,7 +6,6 @@ const LSTodosKey = 'todos';
 const history = [];
 
 const useTodos = () => {
-  console.log('render useTodos');
   const [todos, setTodos] = useState([]);
 
   const addNewTodo = useCallback((text) => {
