@@ -3,7 +3,6 @@ import { useContext, useState } from 'react';
 import { TodoListContext } from '../../Context';
 
 const Form = () => {
-  console.log('render Form');
   const [text, setText] = useState('');
   const { addNewTodo } = useContext(TodoListContext);
   const changeHandler = (e) => {

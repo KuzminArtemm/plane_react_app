@@ -5,13 +5,12 @@ import Main from './components/Main';
 import TodoListProvider from './Context/TodoListContext';
 function expensive() {
   let tmp;
-  for (let index = 0; index < 2e8; index++) {
+  for (let index = 0; index < 2e4; index++) {
     tmp = Math.random();
   }
   return tmp;
 }
 function App() {
-  console.log('render APP');
   return (
     <TodoListProvider>
       <div className="container">

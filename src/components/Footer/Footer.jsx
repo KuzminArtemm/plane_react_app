@@ -4,7 +4,6 @@ import { useContext } from 'react';
 import { TodoListContext } from '../../Context';
 
 const Footer = () => {
-  console.log('render Footer');
   const { returnPrevState, deleteAll } = useContext(TodoListContext);
 
   const deleteHandler = () => {
