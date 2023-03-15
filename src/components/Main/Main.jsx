@@ -1,14 +1,13 @@
+import React from 'react';
+
 import Todolist from '../Todolist';
 
-const Main = ({ completedTodo, deleteTodo, todos }) => {
+const Main = () => {
+  console.log('render Main');
   return (
-    <div>
-      <Todolist
-        completedTodo={completedTodo}
-        deleteTodo={deleteTodo}
-        todos={todos}
-      />
-    </div>
+    <>
+      <Todolist />
+    </>
   );
 };
 

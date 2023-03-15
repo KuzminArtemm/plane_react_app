@@ -1,11 +1,14 @@
+import React from 'react';
+
 import Form from '../Form';
 
-const Header = ({ addNewTodo }) => {
+const Header = () => {
+  console.log('render Header');
   return (
     <header>
-      <Form addNewTodo={addNewTodo} />
+      <Form />
     </header>
   );
 };
 
-export default Header;
+export default React.memo(Header);

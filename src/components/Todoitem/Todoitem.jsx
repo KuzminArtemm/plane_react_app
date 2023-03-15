@@ -6,6 +6,7 @@ const Todoitem = ({
   completed,
   index
 }) => {
+  console.log('render TodoItem');
   const deleteHandler = () => {
     deleteTodo(id);
   };
